@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {AgmCoreModule} from "@agm/core";
  import { GeoFenceComponent } from './geo-fence/geo-fence.component';
 import { RouterModule, Routes } from '@angular/router';
-import {HttpClient} from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   {
@@ -23,6 +23,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
@@ -32,7 +33,7 @@ const appRoutes: Routes = [
     })
 
   ],
-  providers: [    HttpClient,
+  providers: [
   ],
   bootstrap: [AppComponent]
 })
