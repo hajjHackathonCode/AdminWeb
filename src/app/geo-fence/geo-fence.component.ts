@@ -70,7 +70,7 @@ export class GeoFenceComponent implements OnInit {
                 strokeWeight: 2,
                 fillColor: '#FF0000',
                 fillOpacity: 0.35,
-                // timedGeoFence:timedGeoFence,
+                timedGeoFence:timedGeoFence,
                 map: this.map,
                 bounds: {
                   north: timedGeoFence.geoPoints[0].lat,
